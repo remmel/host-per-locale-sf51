@@ -1,7 +1,7 @@
 # host-per-locale-sf51
 
 Objective : be able to handle such urls for a website in 4 languages (fr_BE, nl_BE, de, en):
-- www.website.de/kontak
+- www.website.de/kontakt
 - www.website.com/contact
 - www.website.be/fr/nous-contacter
 - www.website.be/nl/contacteer-ons
