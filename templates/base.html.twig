@@ -2,10 +2,11 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
+        <title>{% block title %}{{'hi' | trans}}{% endblock %}</title>
         {% block stylesheets %}{% endblock %}
     </head>
     <body>
+    <h1>{{'hi' | trans}}</h1>
     Menu: <a href="{{path('home')}}">Home</a> - <a href="{{path('contact')}}">Contact</a> <br />
     <a href="{{path('contact', {'_locale': 'en'})}}">Contact en</a> - <a href="{{path('contact', {'_locale': 'de'})}}"> de</a> - <a href="{{path('contact', {'_locale': 'fr_BE'})}}"> fr_BE</a> - <a href="{{path('contact', {'_locale': 'nl_BE'})}}"> nl_BE</a><br />
     Locale={{app.request.attributes.get('_locale')}}
