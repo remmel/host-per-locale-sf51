@@ -14,7 +14,7 @@ This is currenlty possible using my package [remmel/i18n-routing-bundle](https:/
  - Externalize url translation in `translations/routes.de.yaml`
  - Merge prefix + host to shorten the configuration
 
- Currently `annotation.yaml`
+ Currently `annotations.yaml`
  ```
  controllers:
     resource: ../../src/Controller/
