@@ -19,8 +19,8 @@ class DefaultController extends AbstractController
      * @Route({
      *     "en": "/contact",
      *     "de": "/kontakt",
-     *     "fr_BE": "/fr/nous-contacter",
-     *     "nl_BE": "/nl/contacteer-ons"
+     *     "fr_BE": "/nous-contacter",
+     *     "nl_BE": "/contacteer-ons"
      * }, name="contact")
      */
     public function contact()
