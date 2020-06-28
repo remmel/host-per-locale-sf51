@@ -6,7 +6,9 @@
         {% block stylesheets %}{% endblock %}
     </head>
     <body>
-    Menu: <a href="{{path('home')}}">Home</a> - <a href="{{path('contact')}}">Contact</a>
+    Menu: <a href="{{path('home')}}">Home</a> - <a href="{{path('contact')}}">Contact</a> <br />
+    <a href="{{path('contact', {'_locale': 'en'})}}">Contact en</a> - <a href="{{path('contact', {'_locale': 'de'})}}"> de</a> - <a href="{{path('contact', {'_locale': 'fr_BE'})}}"> fr_BE</a> - <a href="{{path('contact', {'_locale': 'nl_BE'})}}"> nl_BE</a><br />
+    Locale={{app.request.attributes.get('_locale')}}
         {% block body %}{% endblock %}
         {% block javascripts %}{% endblock %}
     </body>
